@@ -1,9 +1,11 @@
 import styles from "./page.module.css";
 
+import RangeSlider from "@/components/RangeSlider/RangeSlider";
+
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1>Next.jS</h1>
+      <RangeSlider min={0} max={1000} gap={100} step={10} />
     </main>
   );
 }
